@@ -9,14 +9,9 @@
 
 name: OpenWrt
 
-on:
-  push:
-    branches: 
-      - master
-  #schedule:
-  #  - cron: 0 0 1 * *
-  #watch:
-  #  types: started
+on: 
+  repository_dispatch:
+  workflow_dispatch:
 
 jobs:
   build:
